@@ -23,11 +23,11 @@ pip install -r requirements.txt  # install
 
 <details open>
 <summary>Test</summary>
-Download the <a href="https://drive.usercontent.google.com/download?id=181tCVWdq2MUv35wiDoGmNEp9APeT5-m4&export=download&authuser=0"> bitewingnumbering.pt</a>  should be downloaded from the checkpoint via drive and the model should be thrown into the checkpoints folder, if there is no folder, it should be created.
+Download the <a href="https://drive.google.com/file/d/1bf0nulvQCF7K7MnWN9lbskl610L9MQHc/view"> panoramic_pulpstone.pt</a>  should be downloaded from the checkpoint via drive and the model should be thrown into the checkpoints folder, if there is no folder, it should be created.
 After determining the test data and the location of the model, the following test steps should be followed.
 
 ```python
-python segment/predict.py --img 640 --weights path/of/model/bitewing_numbering.pt --source path/of/test/images --hide-conf --agnostic-nms --device 0 --line-thickness 1
+python segment/predict.py --img 640 --weights path/of/model/panoramic_pulpstone.pt --source path/of/test/images --hide-conf --agnostic-nms --device 0 --line-thickness 1
 
 
 ```  
